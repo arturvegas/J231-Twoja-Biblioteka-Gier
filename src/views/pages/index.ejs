@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<ul id="gameList"> 
+    <% games.forEach(game => { %> 
+        <li>
+            <a href="/game/<%= game._id %>" style="text-decoration: none; color: black;">
+                <div class="game">
+                    <b> <%= game.title %></b> <br> <i>Status: <%= game.status %></i>
+                    <br><br>
+                    <form method="GET" action="/edit/<%= game._id %>" style="display:inline;">
+                        <button type="submit">Edytuj</button>
+                    </form>
+                    <form action="/delete/<%= game._id %>" method="POST" style="display:inline;">
+                        <button type="submit">Usuń</button>
+                    </form>
+                </div>
+            </a>
+        </li> <br>
+    <% }) %>
+</ul>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,31 @@
+{
+  "name": "Twoja Bibloteka Gier",
+  "version": "1.0.0",
+  "description": "Strona która jest Biblioteką gier użytkownika z możwilością dodawnia gier, usuwania ich, edytowania oraz przeglądania listy gier.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "biblioteka",
+    "gry",
+    "express",
+    "ejs",
+    "mongodb",
+    "mysql",
+    "GameLibrary",
+    "GameCollection",
+    "GameManager",
+    "GameTracker",
+    "GameCatalog",
+    "GameOrganizer"
+  ],
+  "author": "Artur Wykurz",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongodb": "^7.0.0",
+    "mysql": "^2.18.1"
+  }
+}

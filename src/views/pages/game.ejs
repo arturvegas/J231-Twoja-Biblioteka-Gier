@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+
+<div class="description">
+    <div class="title">
+        <h3><b><%= game.title %></b> </h3> <i><%= game.developer %> - <%= game.year %></i>
+    </div>
+    <div class="content">
+        <div class="desc"><i><%= game.desc %></i></div><br>
+        <div class="status">Status: <%= game.status %></div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

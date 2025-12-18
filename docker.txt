@@ -1,0 +1,8 @@
+1. Pobierz środowisko dla dockera (Docker Desktop lub Docker Engine + Docker Compose)
+
+2. Wpisz komendę w cmd:
+
+- docker run -d --name mongo -p 27017:27017 mongo:6.0
+- MONGODB_URI = 'mongodb://localhost:27017';
+
+3. Uruchom server docker w Docker Desktop (załącznik docker.png)

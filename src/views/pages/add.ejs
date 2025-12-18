@@ -1,0 +1,25 @@
+<%- include("../partials/header") %>
+<body>
+    <main>
+        <div id="form">
+            <form method="POST" action="/add">
+                <legend><h2>Dodaj nową grę</h2></legend>
+                <label for="title" >Tytuł:</label><br>
+                <input type="text" id="title" name="title" maxlength="100" required><br>
+                <label for="developer">Developer:</label><br>
+                <input type="text" id="developer" name="developer" maxlength="100" required><br>
+                <label for="year">Rok wydania:</label><br>
+                <input type="number" id="year" name="year" min="1958" max="2050" required><br><br>
+                <label for="desc">Opis:</label><br>
+                <textarea id="desc" name="desc" rows="5" cols="40" maxlength="1000" required></textarea><br><br>
+                <label for="status">Status przejścia gry:</label><br>
+                <select id="status" name="status">
+                    <option value="Skończona">Skończona</option>
+                    <option value="Nie skończona">Nie skończona</option>
+                </select><br><br>
+                <button type="submit">Zapisz grę</button>
+            </form>
+        </div>
+    </main>
+
+<%- include("../partials/footer") %>

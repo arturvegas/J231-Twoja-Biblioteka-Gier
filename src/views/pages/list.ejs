@@ -1,0 +1,59 @@
+<%- include('../partials/header') %>
+
+<div id="sortOptions">
+    <input type="radio" id="none" name="sort" value="none" checked>
+    <label for="none">Nie sortuj</label> <br>
+    <input type="radio" id="az" name="sort" value="az">
+    <label for="az">A-Z</label> <br>
+    <input type="radio" id="za" name="sort" value="za">
+    <label for="za">Z-A</label> <br>
+    <input type="radio" id="status" name="sort" value="status">
+    <label for="status">Sortuj statusem</label>
+</div>
+
+<ul id="listGameList">
+    <% games.forEach(game => { %>
+        <li>
+            <a href="/game/<%= game._id %>" style="text-decoration: none; color: black;">
+                <div class="game">
+                    <b> <%= game.title %></b> <br> <i>Status: <%= game.status %></i>
+                </div>
+            </a>
+        </li>
+    <% }) %>
+</ul>
+
+<script>
+    const list = document.getElementById('listGameList');
+    const originalItems = Array.from(list.children);
+
+    const radios = document.querySelectorAll('input[name="sort"]');
+    radios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            const sortValue = this.value;
+            const items = Array.from(list.children);
+            if (sortValue == 'none') {
+                originalItems.forEach(item => list.appendChild(item));
+            } else {
+                items.sort((GameA, GameB) => {
+                    if (sortValue == 'az') {
+                        const titleA = GameA.querySelector('b').textContent;
+                        const titleB = GameB.querySelector('b').textContent;
+                        return titleA.localeCompare(titleB);
+                    } else if (sortValue == 'za') {
+                        const titleA = GameA.querySelector('b').textContent;
+                        const titleB = GameB.querySelector('b').textContent;
+                        return titleB.localeCompare(titleA);
+                    } else if (sortValue == 'status') {
+                        const statusA = GameA.querySelector('i').textContent;
+                        const statusB = GameB.querySelector('i').textContent;
+                        return statusA.localeCompare(statusB);
+                    }
+                });
+                items.forEach(item => list.appendChild(item));
+            }
+        });
+    });
+</script>
+
+<%- include('../partials/footer') %>
