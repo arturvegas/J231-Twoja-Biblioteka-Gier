@@ -29,7 +29,7 @@ GET /game/:id - szczegóły poszczególnej gry
 
 🛫 Aby uruchomić stronę należy najpierw sklonować repozytorium github poprzez komendę:
 
-\- git clone https://github.com/arturvegas/J231-Twoja-Biblioteka-Gier.git
+> git clone https://github.com/arturvegas/J231-Twoja-Biblioteka-Gier.git
 
 Następnie przeczytać i postępować zgodnie z plikiem docker.txt następnie uruchomić konsolę CMD
 i wpisać "cd {lokalizacja projektu np: C:\\Users\\User\\Desktop\\4J231}" następnie "npm start".
