@@ -9,7 +9,7 @@ Aby uruchomić stronę należy najpierw sklonować repozytorium github poprzez k
 
 
 
-\- git clone https://github.com/arturvegas/J204-Twoja-Biblioteka-Gier.git
+\- git clone https://github.com/arturvegas/J231-Twoja-Biblioteka-Gier.git
 
 
 
