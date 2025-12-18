@@ -12,10 +12,15 @@
 ⭐ Lista endpointów:
 
 > GET / - strona główna
+> 
 > GET /list - lista gier
+> 
 > GET /add, POST /add - dodawanie gier
+> 
 > GET /edit/:id, POST /edit/:id - edytowanie poszczególnej gry
+> 
 > POST /delete/:id - usuwanie poszczególnej gry
+> 
 > GET /game/:id - szczegóły poszczególnej gry
 
 
