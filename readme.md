@@ -1,26 +1,19 @@
 🎮 Projekt "Twoja Biblioteka Gier"  pozwala na stworzeniu własnej kolekcji gier składającej się z różnych gier, ich tytułu, dewelopera, opisu, roku wydania oraz statusu czy przeszedłeś daną grę lub nie. 
-
 ❓ Strona umożliwia usuwanie, edytowanie oraz przeglądaniu listy gier, którą można sortować poprzez nazwę (od a do z, lub od z do a) lub poprzez status.
-
 ❔ Aby dodać grę wystarczy kliknąć "Dodaj grę", uzupełnić wszystkie dane i kliknąć przycisk zapisz grę.
-
 🀄 Technologoie użyte w projekcie to: EJS, CSS, JavaScript 
 
 
 
+
 ⭐ Lista endpointów:
-
 GET / - strona główna
-
 GET /list - lista gier
-
 GET /add, POST /add - dodawanie gier
-
 GET /edit/:id, POST /edit/:id - edytowanie poszczególnej gry
-
 POST /delete/:id - usuwanie poszczególnej gry
-
 GET /game/:id - szczegóły poszczególnej gry
+
 
 
 
@@ -33,7 +26,10 @@ Następnie przeczytać i postępować zgodnie z plikiem docker.txt następnie ur
 i wpisać "cd {lokalizacja projektu np: C:\\Users\\User\\Desktop\\4J231}" następnie "npm start".
 
 
+
+
 ✡️ Autor: Artur Wykurz
+
 
 
 
